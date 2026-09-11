@@ -12,8 +12,8 @@ Cutscenes work through a pretty straightforward system, they run all the command
 cutscene_create();
 cutscene_player_canmove(false);
 cutscene_dialogue([
-    "{char(susie, 14)}* Hey Kris whats up.",
-    "{face_ex(17)}* No, it's the roof dumbass."
+    "{char(susie, 14)}* Hey Kris, what's up?",
+    "{face_ex(17)}* No, it's the roof, dumbass."
 ]);
 cutscene_func(function(){
     var _inst = instance_create(o_roof_meter);
@@ -25,13 +25,13 @@ cutscene_player_canmove(true);
 cutscene_play();
 ```
 
-This above code would start a cutscene, make it so you cant move, write some dialogue of susie talking, create an object instance, pause the cutscene for 15 frames, and let you move again.
+The code above would start a cutscene, make it so you can't move, write some dialogue from Susie, create an object instance, pause the cutscene for 15 frames, and let you move again.
 
 The main way you will make sure your cutscene is timed to your liking is through specific waiting variables and functions. Many cutscene functions already have a wait variable built in, and all you have to do is set that variable to be true to pause the cutscene until it's done running. There are also separate functions like cutscene_sleep which will pause the cutscene for a certain amount of frames, or cutscene_wait_until which will only continue the cutscene once the function placed inside it returns true.
 
-You can view many examples of cutscenes in the ZZZ examples folder in your project, specifically the room named something like "cutscene_room_test" in the creation code of the two o_trigger objects.
+You can view many examples of cutscenes in the "zzz Examples" folder in your project, specifically the room named something like "cutscene_room_test" in the creation code of the two o_trigger objects.
 
-## CUTSCENE FUNCTIONS (all can be found in the CUTSCENES script in the engine folder!)
+## CUTSCENE FUNCTIONS (all can be found in the CUTSCENES script in the @Engine folder!)
 
 ### cutscene_create()
 
@@ -39,7 +39,7 @@ You can view many examples of cutscenes in the ZZZ examples folder in your proje
 
 ### cutscene_play()
 
-- starts the cutscene, which plays whatever you have in it's queue in order
+- starts the cutscene, which plays whatever you have in its queue in order
 
 ### cutscene_sleep()
 
@@ -65,18 +65,18 @@ You can view many examples of cutscenes in the ZZZ examples folder in your proje
 
 ### cutscene_player_canmove()
 
-- sets wether the player is allowed to move or not
+- sets whether the player is allowed to move or not
 - commonly used at the start of many cutscenes, so keep this one in mind...
 
 ### cutscene_party_follow()
 
-- sets wether party members will follow their leader or not
+- sets whether party members will follow their leader or not
 
 ### cutscene_actor_move()
 
 - moves an actor during a cutscene
 - main two parameters being the actor to move and an actor_movement struct
-- since this one tends to be more complex, heres a crappy notated version of this function so you can better get it
+- since this one tends to be more complex, here's a crappy notated version of this function so you can better understand it
 
 ```gml
 cutscene_actor_move(actor_instance, new actor_movement(
@@ -115,7 +115,7 @@ are_positions_absolute
 
 - animated a value between two positions along a single curve during a cutscene.
 - for built in easing set ease_type to a string, or for custom easing use a function, animation curve struct/ID, or an animated curve channel
-- to find all built in easing types go to anime_functions in @engine and scroll around midway.
+- to find all built in easing types go to anime_functions in @Engine and scroll around midway.
 
 ### cutscene_animate()
 
@@ -127,7 +127,7 @@ are_positions_absolute
 cutscene_animate(5, 0, 10, "linear", o_actor_kris, "shake")
 ```
 
-- this shakes around kris!
+- this shakes around Kris!
 
 ### cutscene_instance_create()
 
