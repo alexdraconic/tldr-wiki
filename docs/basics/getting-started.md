@@ -26,20 +26,20 @@ It is highly reccommended to use version control when working with this engine,
 3. Open your repository in Command Prompt with right click (see attatchment) ![relevent Screenshot](../assets/screenshot_open_in_command_prompt.png)
 4. In the Command Prompt, call the following commands in order:
 
-```
-git remote add upstream https://github.com/tweenko/tldr-engine.git
-```
+    ```
+    git remote add upstream https://github.com/tweenko/tldr-engine.git
+    ```
 
-```
-git fetch upstream
-```
+    ```
+    git fetch upstream
+    ```
 
-```
-git reset --hard upstream 
-```
+    ```
+    git reset --hard upstream 
+    ```
 
-1. Publish your repository using the big publish button on Github Desktop. (If you cannot see it, press "Fetch Origin" first.)
-2. :tada: Celebrate
+5. Publish your repository using the big publish button on Github Desktop. (If you cannot see it, press "Fetch Origin" first.)
+6. :tada: Celebrate
 
 After this has finished, you can start making changes to the engine in the directory you created the repository in. Now you should just commit regularly and follow common practice for GitHub projects.
 
