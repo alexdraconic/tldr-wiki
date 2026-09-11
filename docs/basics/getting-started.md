@@ -14,7 +14,7 @@ Before jumping into the Engine head-on, I must warn you. This Engine REQUIRES at
 
 First, you need to download the engine.
 ::: danger {no-title}
-Please, Do not just Clone/Download the repository. Instead, *create a new 
+Please, Do not just Clone/Download the repository. Instead, *create a new
 repository with the following steps*
 :::
 
