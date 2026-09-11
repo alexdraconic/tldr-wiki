@@ -129,3 +129,12 @@
   --vp-custom-block-tip-code-bg: var(--vp-c-brand-soft);
 }
 
+/**
+ * Component: Custom Block
+ * -------------------------------------------------------------------------- */
+
+:root {
+  --vp-font-family-base: 8bitoperator_jve.ttf
+  --vp-font-family-mono: /* code font */
+}
+
