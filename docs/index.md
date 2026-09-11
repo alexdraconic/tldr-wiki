@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Totally Lit Deltarune Engine"
   text: "Reference Document"
-  tagline: Gamemaker based DELTARUNE engine
+  tagline: GameMaker based DELTARUNE engine
   actions:
     - theme: brand
       text: Installation Guide

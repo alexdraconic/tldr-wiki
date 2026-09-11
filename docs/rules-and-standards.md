@@ -19,7 +19,7 @@ Here's an example: {.scheme-subtext}
 
 \*-optional{.subtext}
 
-**Asset Type** - GameMaker has many asset types like SPrites, Objects, Scripts, etc. In the naming scheme, they use these abbreviations:
+**Asset Type** - GameMaker has many asset types like Sprites, Objects, Scripts, etc. In the naming scheme, they use these abbreviations:
 
 - Script - “ “ [none] ~ (ch5\*item_consumables)
 - Object - “o\_” ~ (o\*ex_ow_field_lamppost)
