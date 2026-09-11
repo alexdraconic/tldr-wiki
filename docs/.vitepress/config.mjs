@@ -18,8 +18,24 @@ export default defineConfig({
         sidebar: [
             {
                 text: "Basics",
-                items: [{ text: "Getting Started", link: "/basics/getting-started" }],
+                items: [
+                  { text: "Getting Started", link: "/basics/getting-started" },
+                  { text: "FAQ", link: "/basics/faq" }
+                ],
             },
+            {
+              text: "Battle System",
+              items: [
+                {text: "Enemy and Encounter Scripts", link: "/battle-system/enemy-encounter-scripts"}
+              ]
+            },
+            {
+              text: "Cutscenes",
+              items: [
+                {text: "Cutscenes", link: "/cutscenes"}
+                // TODO add text box/typer control info
+              ]
+            }
         ],
 
         socialLinks: [
