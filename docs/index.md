@@ -3,23 +3,15 @@
 layout: home
 
 hero:
-  name: "TLDR Engine Docs"
-  text: "A VitePress Site"
-  tagline: My great project tagline
+  name: "Totally Lit Deltarune Engine"
+  text: "Refrence Document"
+  tagline: Gamermaker based DELTARUNE engine
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Installation Guide
+      link: /basics/getting-started
     - theme: alt
-      text: API Examples
-      link: /api-examples
-
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+      text: Join The Discord!
+      link: https://discord.gg/x3t8JTyC2p
 ---
 
