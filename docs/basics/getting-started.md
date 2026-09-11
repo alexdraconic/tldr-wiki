@@ -1,6 +1,6 @@
 ---
 title: Getting Started
-decsription: Installation instructions for the Totally Lit Deltarune Engine
+description: Installation instructions for the Totally Lit Deltarune Engine
 ---
 
 # Getting Started <Badge type="tip" text="^3.1.0" />
@@ -18,12 +18,12 @@ Please, Do not just Clone/Download the repository. Instead, *create a new
 repository with the following steps*
 :::
 
-It is highly reccommended to use version control when working with this engine,
-[Github Desktop](https://desktop.github.com/download/) is highly reccomended.
+It is highly recommended to use version control when working with this engine,
+[GitHub Desktop](https://desktop.github.com/download/) is highly recommended.
 
-1. [Create a repository](https://github.com/new) on the github website.
-2. Open github desktop and clone your repository.
-3. Open your repository in Command Prompt with right click (see attatchment) ![relevent Screenshot](../assets/screenshot_open_in_command_prompt.png)
+1. [Create a repository](https://github.com/new) on the GitHub website.
+2. Open GitHub Desktop and clone your repository.
+3. Open your repository in Command Prompt with right click (see attachment) ![relevant Screenshot](../assets/screenshot_open_in_command_prompt.png)
 4. In the Command Prompt, call the following commands in order:
 
     ```
@@ -38,7 +38,7 @@ It is highly reccommended to use version control when working with this engine,
     git reset --hard upstream 
     ```
 
-5. Publish your repository using the big publish button on Github Desktop. (If you cannot see it, press "Fetch Origin" first.)
+5. Publish your repository using the big publish button on GitHub Desktop. (If you cannot see it, press "Fetch Origin" first.)
 6. :tada: Celebrate
 
 After this has finished, you can start making changes to the engine in the directory you created the repository in. Now you should just commit regularly and follow common practice for GitHub projects.
