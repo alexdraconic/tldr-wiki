@@ -31,7 +31,9 @@ export default defineConfig({
             {
               text: "Battle System",
               items: [
-                {text: "Enemy and Encounter Scripts", link: "/battle-system/enemy-encounter-scripts"}
+                {text: "Battle System Intro", link: "/battle-system/battle-system-intro"},
+                {text: "Encounter Sets", link: "/battle-system/encounter-sets"},
+                {text: "Turn Objects", link: "/battle-system/turn-objects"}
               ]
             },
             {
@@ -39,6 +41,7 @@ export default defineConfig({
               items: [
                 {text: "Cutscenes", link: "/cutscenes"}
                 // TODO add text box/typer control info
+                // TODO add Actors
               ]
             }
         ],

@@ -19,7 +19,7 @@ repository with the following steps*
 :::
 
 It is highly reccommended to use version control when working with this engine,
-[Github Desktop ](https://desktop.github.com/download/) is highly reccomended.
+[Github Desktop](https://desktop.github.com/download/) is highly reccomended.
 
 1. [Create a repository](https://github.com/new) on the github website.
 2. Open github desktop and clone your repository.
