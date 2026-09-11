@@ -1,11 +1,16 @@
 import { defineConfig } from "vitepress";
 import gmlGrammar from "./gml.tmLanguage.json" with { type: "json" };
+import gmlTheme from "./gml.theme.json" with { type: "json" };
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
     title: "TLDR Engine Docs",
     markdown: {
         languages: [gmlGrammar],
+        theme: {
+            light : gmlTheme,
+            dark : gmlTheme
+        }
     },
     description: "A VitePress Site",
     themeConfig: {

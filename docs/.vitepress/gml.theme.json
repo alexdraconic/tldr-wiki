@@ -1,0 +1,72 @@
+{
+  "name": "gml",
+  "tokenColors": [
+    {
+      "scope": "comment", 
+      "settings": { 
+        "foreground": "#5b995b" 
+      } 
+    },
+    { "scope": "string", 
+      "settings": {
+        "foreground": "#ffff00" 
+      } 
+    },
+    { 
+      "scope": "keyword", 
+      "settings": {
+         "foreground": "#ffb871",
+         "fontStyle": "bold" 
+        } 
+    },
+    {
+      "scope": "constant",
+      "settings": {
+        "foreground": "#ff8080"
+      }
+    },
+    
+    {
+      "scope": "variable.builtin",
+      "settings": {
+        "foreground": "#00ff00"
+      }
+    },
+    {
+      "scope": "variable.instance",
+      "settings": {
+        "foreground": "#b2b1ff"
+      }
+    },
+    {
+      "scope": "variable.global",
+      "settings": {
+        "foreground": "#ff7eff"
+      }
+    },
+    {
+      "scope": "variable.local",
+      "settings": {
+        "foreground": "#fff899"
+      }
+    },
+
+    { 
+      "scope": "function", 
+      "settings": {
+         "foreground": "#ffb871" 
+        } 
+    },
+    
+    {
+      "scope": "asset",
+      "settings": {
+        "foreground": "#ff8080"
+      }
+    }
+
+
+  
+    
+  ]
+}

@@ -14,38 +14,62 @@
             "begin": "/\\*",
             "end": "\\*/"
         },
+
         {
             "name": "string.quoted.double.gml",
             "begin": "\"",
             "end": "\""
         },
+
         {
             "name": "keyword.control.gml",
-            "match": "\\b(if|else|switch|case|default|for|while|do|until|repeat|with|break|continue|return|exit)\\b"
+            "match": "\\b(if|else|switch|case|default|for|while|do|until|repeat|with|break|continue|return|exit|delete)"
         },
         {
-            "name": "storage.type.gml",
-            "match": "\\b(var|globalvar|enum|function|constructor|new)\\b"
+            "name": "keyword.type.gml",
+            "match": "\\b(var|globalvar|enum|function|constructor|new)"
         },
+
         {
             "name": "constant.language.gml",
-            "match": "\\b(true|false|noone|undefined|NaN|infinity)\\b"
+            "match": "\\b(true|false|all|self|noone|undefined|NaN|infinity|global(?=\\.+))"
         },
         {
             "name": "constant.numeric.gml",
             "match": "\\b[0-9]+(\\.[0-9]+)?\\b"
         },
+
         {
-            "name": "support.variable.gamemaker.gml",
-            "match": "\\b(x|y|id|visible|solid|persistent|depth|layer|alarm|direction|speed|hspeed|vspeed|gravity|gravity_direction|friction|image_index|image_speed|image_number|image_angle|image_alpha|image_blend|image_xscale|image_yscale|sprite_index|mask_index|path_index|path_position|path_positionprev|path_speed|path_scale|path_orientation|path_endaction|timeline_index|timeline_position|timeline_speed|timeline_running|object_index|room|room_width|room_height|room_speed|fps|fps_real|current_time|current_year|current_month|current_day|current_weekday|current_hour|current_minute|current_second|score|lives|health)\\b"
+            "name": "function.user",
+            "match": "\\b[a-zA-Z_]\\w*(?=\\()"
+        },
+
+        {
+            "name": "asset.tldr",
+            "match": "\\b(o|spr|font|mus|snd|room|tile|snd|shd)_\\w*"
+        },
+
+
+
+
+        {
+            "name": "variable.builtin",
+            "match": "\\b(x|y|id|visible|solid|persistent|depth|layer|alarm|direction|speed|hspeed|vspeed|gravity|gravity_direction|friction|image_index|image_speed|image_number|image_angle|image_alpha|image_blend|image_xscale|image_yscale|sprite_index|mask_index|path_index|path_position|path_positionprev|path_speed|path_scale|path_orientation|path_endaction|timeline_index|timeline_position|timeline_speed|timeline_running|object_index|room|room_width|room_height|room_speed|fps|fps_real|current_time|current_year|current_month|current_day|current_weekday|current_hour|current_minute|current_second|score|lives|health)"
+        },
+         {
+            "name": "variable.global",
+            "match": "(?<=global\\.)\\w*"
         },
         {
-            "name": "support.function.gamemaker.gml",
-            "match": "\\b(instance_create_layer|instance_create_depth|instance_destroy|instance_exists|instance_number|instance_find|place_meeting|position_meeting|position_change|instance_place|instance_position|point_direction|point_distance|lengthdir_x|lengthdir_y|draw_self|draw_sprite|draw_text|draw_circle|draw_rectangle|room_goto|room_goto_next|room_goto_previous|room_restart|game_restart|game_end|keyboard_check|keyboard_check_pressed|keyboard_check_released|mouse_check_button|mouse_check_button_pressed|mouse_check_button_released|show_debug_message|show_message|random|irandom|random_range|irandom_range|choose|clamp|min|max|abs|round|floor|ceil|sqrt|power|sign|sin|cos|tan|arcsin|arccos|arctan|matrix_multiply|matrix_build|audio_play_sound|audio_stop_sound|audio_is_playing|sprite_add|sprite_replace|sprite_delete|surface_create|surface_free|surface_exists|surface_set_target|surface_reset_target|draw_surface|ini_open|ini_close|ini_read_string|ini_write_string|ini_read_real|ini_write_real|variable_instance_exists|variable_instance_get|variable_instance_set|variable_global_exists|variable_global_get|variable_global_set|array_create|array_length|array_push|array_pop|array_insert|array_delete|array_sort|struct_get|struct_set|struct_exists|struct_remove)\\b"
+            "name": "variable.local", 
+            "match": "(?<= +)_[a-zA-Z_][a-zA-Z0-9_]*"
         },
         {
-            "name": "entity.name.function.gml",
-            "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*(?=\\()"
+            "name": "variable.instance",
+            "match": "\\b[a-zA-Z_][a-zA-Z0-9_]*"
         }
+
+        
+        
     ]
 }
