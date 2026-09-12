@@ -8,6 +8,28 @@
       } 
     },
 
+    {
+      "scope": "jsdoc.directive",
+      "settings": {
+        "foreground": "#b871ff",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "jsdoc.type",
+      "settings": {
+        "foreground": "#727eff",
+        "fontStyle": "bold"
+      }
+    },
+    {
+      "scope": "jsdoc.name",
+      "settings": {
+        "foreground": "#72bfff",
+        "fontStyle": "bold italic"
+      }
+    },
+
     { "scope": "string", 
       "settings": {
         "foreground": "#ffff00" 
@@ -27,6 +49,13 @@
       }
     },
     
+    { 
+      "scope": "function", 
+      "settings": {
+         "foreground": "#ffb871" 
+        } 
+    },
+    
     {
       "scope": "variable.builtin",
       "settings": {
@@ -34,7 +63,7 @@
       }
     },
     {
-      "scope": "variable.instance",
+      "scope": "variable",
       "settings": {
         "foreground": "#b2b1ff"
       }
@@ -50,14 +79,6 @@
       "settings": {
         "foreground": "#fff899"
       }
-    },
-
-    { 
-      "scope": "function", 
-      "settings": {
-         "foreground": "#ffb871" 
-        } 
     }
-    
   ]
 }

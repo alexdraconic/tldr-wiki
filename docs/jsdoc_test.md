@@ -1,12 +1,12 @@
-```gml
-/// @desc This is a constructor used to add chapter options to the chapter select menu (in `global.registered_chapters`).
-/// @arg {string} _name The chapter's name or localization code, if applicable.
-/// @arg {Asset.GMSprite} _icon The chapter's default icon.
-/// @arg {Asset.GMSound} _sound The sound that's going to play upon chapter selection.
-/// @arg {real} _target_chapter The chapter number you'll load into.
-/// @arg {Asset.GMRoom} _default_room The room the chapter will start in on a fresh save.
-/// @arg {Asset.GMObject} _intro_seq_first_run The intro sequence object that's going to play if you have no saves on that chapter. (-1 (none) by default)
-/// @arg {Asset.GMObject} _intro_seq_midgame  The intro sequence object that's going to play if you have no completed saves on that chapter. (-1 (none) by default)
+```gml:line-numbers
+// @desc This is a constructor used to add chapter options to the chapter select menu (in `global.registered_chapters`).
+// @arg {string} _name The chapter's name or localization code, if applicable.
+// @arg {Asset.GMSprite} _icon The chapter's default icon.
+// @arg {Asset.GMSound} _sound The sound that's going to play upon chapter selection.
+// @arg {real} _target_chapter The chapter number you'll load into.
+// @arg {Asset.GMRoom} _default_room The room the chapter will start in on a fresh save.
+// @arg {Asset.GMObject} _intro_seq_first_run The intro sequence object that's going to play if you have no saves on that chapter. (-1 (none) by default)
+// @arg {Asset.GMObject} _intro_seq_midgame  The intro sequence object that's going to play if you have no completed saves on that chapter. (-1 (none) by default)
 /// @arg {Asset.GMObject} _intro_seq_default The intro sequence object that's going to play if you have any completed saves on that chapter, or if the previous intro sequences have not been defined. (`o_intro_legend` by default)
 /// @arg {Enum.SAVE_SELECT_THEME} _save_theme_default The theme to use for room_save_select while the chapter isn't completed. (`SAVE_SELECT_THEME.GREAT_DOOR` by default)
 /// @arg {Enum.SAVE_SELECT_THEME} _save_theme_completed The theme to use for room_save_select if the chapter is completed. (`SAVE_SELECT_THEME.FOUNTAIN` by default)
@@ -85,15 +85,15 @@ function chapter_option(_name, _icon, _sound, _target_chapter, _default_room, _i
 ///@arg {Real} [tolerance]
 /// @arg {bool} [percise_collisions] whether the collision calculation should use a percise bounding box. false by default
 /// @return {Bool}
-function onscreen(instance = id, tolerance = 0, percise_collisions = false) {	
-    if !instance_exists(instance)
+function onscreen(_instance = id, _tolerance = 0, _percise_collisions = false) {	
+    if !instance_exists(_instance)
         exit
     
-    if collision_rectangle(guipos_x() - tolerance, 
-        guipos_y() - tolerance, 
-        guipos_x() + o_camera.width + tolerance, 
-        guipos_y() + o_camera.height + tolerance, 
-        instance, percise_collisions, false
+    if collision_rectangle(guipos_x() - _tolerance, 
+        guipos_y() - _tolerance, 
+        guipos_x() + o_camera.width + _tolerance, 
+        guipos_y() + o_camera.height + _tolerance, 
+        _instance, _percise_collisions, false
     )
         return true
     else

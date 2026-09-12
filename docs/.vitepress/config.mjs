@@ -10,7 +10,8 @@ export default defineConfig({
         theme: {
             light : gmlTheme,
             dark : gmlTheme
-        }
+        },
+        lineNumbers : true
     },
     description: "A VitePress Site",
     themeConfig: {
