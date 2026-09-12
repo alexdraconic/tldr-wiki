@@ -27,6 +27,10 @@ export default defineConfig({
                 items: [
                   { text: "Getting Started", link: "/basics/getting-started" },
                   { text: "FAQ", link: "/basics/faq" }
+                  // TODO: Port Rules and standards
+                  // TODO: Port contributing.md
+                  // TODO: Port How To Update
+                  // TODO: Credits and thanks(?)
                 ],
             },
             {
@@ -34,6 +38,7 @@ export default defineConfig({
               items: [
                 {text: "Battle System Intro", link: "/battle-system/battle-system-intro"},
                 {text: "Encounter Sets", link: "/battle-system/encounter-sets"},
+                {text: "Enemies", link: "/battle-system/enemy-reference"},
                 {text: "Turn Objects", link: "/battle-system/turn-objects"}
               ]
             },
@@ -41,8 +46,8 @@ export default defineConfig({
               text: "Cutscenes",
               items: [
                 {text: "Cutscenes", link: "/cutscenes"}
-                // TODO add text box/typer control info
-                // TODO add Actors
+                // TODO: Add text box/typer control info
+                // TODO: Add Actors
               ]
             }
         ],

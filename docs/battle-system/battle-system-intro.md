@@ -1,5 +1,6 @@
 ---
 title: Battle System Intro
+description: An overview of the battle system.
 ---
 
 # Battle System Intro <Badge type="tip" text="^3.1.0" />
@@ -39,6 +40,10 @@ on collision with the actor, set it to a `new enc_set()`
 ::: tip {no-title}
 See `room_test_movement` for an example
 :::
+
+## Event Order
+
+STUB
 
 ## Adjusting the Battle Box
 
